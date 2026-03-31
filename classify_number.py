@@ -4,6 +4,7 @@ def is_even(n):
     """Dado un número entero n, retorna True si es par, False si es impar."""
     return n % 2 == 0
 
+
 def is_positive(n):
     """Dado un número entero n, retorna True si es mayor a 0, False en caso contrario."""
     return n > 0
@@ -22,4 +23,15 @@ def classify_number(n):
       - "negative odd"    (negativo e impar)
       - "zero"            (el número es 0)
     """
-    return "ANSWER HERE"  # Remove this line and implement
+
+    if n > 0 and n % 2 == 0:
+        return "positive even"
+    elif n > 0 and n % 2 == 1:
+        return "positive odd"
+    elif n < 0 and n % 2 == 0:
+        return "negative even"
+    elif n < 0 and n % 2 == 1:
+        return "negative odd"
+    elif n == 0:
+        return "zero"
+
