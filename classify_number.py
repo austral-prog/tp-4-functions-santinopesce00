@@ -26,11 +26,11 @@ def classify_number(n):
 
     if n > 0 and n % 2 == 0:
         return "positive even"
-    elif n > 0 and n % 2 == 1:
+    elif n > 0 and n % 2 != 0:
         return "positive odd"
     elif n < 0 and n % 2 == 0:
         return "negative even"
-    elif n < 0 and n % 2 == 1:
+    elif n < 0 and n % 2 != 0:
         return "negative odd"
     elif n == 0:
         return "zero"
